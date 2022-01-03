@@ -7,6 +7,7 @@
 
 import UIKit
 import AVKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -60,12 +61,12 @@ class ViewController: UIViewController {
            videoPlayerLayer = AVPlayerLayer(player: videoPlayer!)
            
            // Adjust the size and frame
-           videoPlayerLayer?.frame = CGRect(x: -self.view.frame.size.width*1.5, y: 0, width: self.view.frame.size.width*4, height: self.view.frame.size.height)
+           videoPlayerLayer?.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
            
            view.layer.insertSublayer(videoPlayerLayer!, at: 0)
            
            // Add it to the view and play it
-           videoPlayer?.playImmediately(atRate: 0.3)
+           videoPlayer?.playImmediately(atRate: 1.0)
        }
 
 
