@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_VT6002CEM_217109054_VT6002CEM_217109054UITests : NSObject
+@end
+@implementation PodsDummy_Pods_VT6002CEM_217109054_VT6002CEM_217109054UITests
+@end
