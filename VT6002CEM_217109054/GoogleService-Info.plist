@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>442395275973-2svd71rnc0bkk0kea6ui9m2mfsmh47oc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.442395275973-2svd71rnc0bkk0kea6ui9m2mfsmh47oc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBF2RGoFwNKqLtWO6Mz-qsGCvTmgib4oLo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>442395275973</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>WongChunKit.VT6002CEM-217109054</string>
+	<key>PROJECT_ID</key>
+	<string>vt6002cem-217109054</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vt6002cem-217109054.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:442395275973:ios:c186b8bcf8040cf00336ac</string>
+</dict>
+</plist>
