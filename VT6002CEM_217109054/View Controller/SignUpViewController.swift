@@ -90,9 +90,11 @@ class SignUpViewController: UIViewController {
                         
                         // Check for errors
                         if err != nil {
+                            self.present(Service.createAlertController(title: "Error", message: err!.localizedDescription), animated:true ,completion: nil)
                             
                             // There was an error creating the user
                             self.showError("Error creating user")
+                            return
                         }
                         else {
                             
@@ -102,8 +104,10 @@ class SignUpViewController: UIViewController {
                             db.collection("user").addDocument(data: ["FirstName":firstName, "LastName":lastName, "uid": result!.user.uid ]) { (error) in
                                 
                                 if error != nil {
+                                    self.present(Service.createAlertController(title: "Error", message: error!.localizedDescription), animated:true ,completion: nil)
                                     // Show error message
                                     self.showError("Error saving user data")
+                                    return
                                 }
                             }
                             
@@ -120,16 +124,14 @@ class SignUpViewController: UIViewController {
             
             func showError(_ message:String) {
                 
-                ErrorLabel.text = message
-                ErrorLabel.alpha = 1
+               // ErrorLabel.text = message
+               // ErrorLabel.alpha = 1
             }
             
             func transitionToHome() {
                 
-                let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.HomeViewController) as? HomeViewController
-                
-                view.window?.rootViewController = homeViewController
-                view.window?.makeKeyAndVisible()
+                let MainTabController = storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+                                self.present(MainTabController, animated: true,completion: nil)
                 
             }
             

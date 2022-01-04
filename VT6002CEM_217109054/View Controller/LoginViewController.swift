@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 
 class LoginViewController: UIViewController {
@@ -62,15 +63,16 @@ class LoginViewController: UIViewController {
                     
                     if error != nil {
                         // Couldn't sign in
-                        self.ErrorLabel.text = error!.localizedDescription
-                        self.ErrorLabel.alpha = 1
+                       // self.ErrorLabel.text = error!.localizedDescription
+                       // self.ErrorLabel.alpha = 1
+                        self.present(Service.createAlertController(title: "Error", message: error!.localizedDescription), animated:true ,completion: nil)
+                        return
                     }
                     else {
                         
-                        let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.HomeViewController) as? HomeViewController
-                        
-                        self.view.window?.rootViewController = homeViewController
-                        self.view.window?.makeKeyAndVisible()
+                        let MainTabController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+                                        self.present(MainTabController, animated: true,completion: nil)
+                       // self.performSegue(withIdentifier: "userSignedInSegue", sender:nil)
                     }
                 }
             }

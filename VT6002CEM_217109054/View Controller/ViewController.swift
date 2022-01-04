@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         
     var videoPlayerLayer:AVPlayerLayer?
     
+    var videoLooperPlayer: AVPlayerLooper?
+    
     @IBOutlet weak var SignUpButton: UIButton!
     
     @IBOutlet weak var LoginButton: UIButton!
@@ -32,6 +34,11 @@ class ViewController: UIViewController {
             // Set up video in the background
             setUpVideo()
         }
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        // Stop video in the background
+        StopVideo()
+    }
     func setUpElements() {
            
            Utilities.styleFilledButton(SignUpButton)
@@ -55,19 +62,21 @@ class ViewController: UIViewController {
            let item = AVPlayerItem(url: url)
            
            // Create the player
-           videoPlayer = AVPlayer(playerItem: item)
-           
+           self.videoPlayer = AVQueuePlayer(playerItem: item)
            // Create the layer
-           videoPlayerLayer = AVPlayerLayer(player: videoPlayer!)
+           self.videoPlayerLayer = AVPlayerLayer(player: videoPlayer!)
+           
+           self.videoLooperPlayer = AVPlayerLooper(player: self.videoPlayer as! AVQueuePlayer, templateItem: item)
            
            // Adjust the size and frame
-           videoPlayerLayer?.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+           self.videoPlayerLayer?.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
            
-           view.layer.insertSublayer(videoPlayerLayer!, at: 0)
+           self.view.layer.insertSublayer(videoPlayerLayer!, at: 0)
            
            // Add it to the view and play it
-           videoPlayer?.playImmediately(atRate: 1.0)
+           self.videoPlayer?.playImmediately(atRate: 1.0)
        }
-
-
+    func StopVideo(){
+        self.videoPlayer?.pause()
+    }
    }

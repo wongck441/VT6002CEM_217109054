@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		786F6AD9EC5151D832218625 /* Pods_VT6002CEM_217109054.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7885D95FE8E80E21ACB52719 /* Pods_VT6002CEM_217109054.framework */; };
 		9D51F65265D69E6A6D48F20D /* Pods_VT6002CEM_217109054_VT6002CEM_217109054UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892CFA17B0CF074B6372FDE /* Pods_VT6002CEM_217109054_VT6002CEM_217109054UITests.framework */; };
+		CE0573C827844C9D00CBB247 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0573C727844C9D00CBB247 /* MainTabController.swift */; };
+		CE0573CA27845EA800CBB247 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0573C927845EA800CBB247 /* Service.swift */; };
 		CE5F99D427832F7300BFA59C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5F99D327832F7300BFA59C /* GoogleService-Info.plist */; };
 		CE5F99D7278330A900BFA59C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CE5F99D6278330A900BFA59C /* FirebaseAnalytics */; };
 		CE5F99D9278330A900BFA59C /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CE5F99D8278330A900BFA59C /* FirebaseAnalyticsSwift-Beta */; };
@@ -79,6 +81,8 @@
 		7885D95FE8E80E21ACB52719 /* Pods_VT6002CEM_217109054.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VT6002CEM_217109054.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E71BFC38B9DA737CBC53F1 /* Pods_VT6002CEM_217109054Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VT6002CEM_217109054Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C9536948F2AFF656CB38A0 /* Pods-VT6002CEM_217109054Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VT6002CEM_217109054Tests.release.xcconfig"; path = "Target Support Files/Pods-VT6002CEM_217109054Tests/Pods-VT6002CEM_217109054Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CE0573C727844C9D00CBB247 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		CE0573C927845EA800CBB247 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CE5F99D327832F7300BFA59C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE5F9A0A27833BA600BFA59C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE5F9A0D278358A000BFA59C /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 				CE90284B2782F424000EC8AE /* SignUpViewController.swift */,
 				CE90284D2782F447000EC8AE /* LoginViewController.swift */,
 				CE90284F2782F460000EC8AE /* HomeViewController.swift */,
+				CE0573C727844C9D00CBB247 /* MainTabController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 				CEC97B73277E1FB0009C5D0E /* Info.plist */,
 				CE5F99D327832F7300BFA59C /* GoogleService-Info.plist */,
 				CEC97B6B277E1FAF009C5D0E /* VT6002CEM_217109054.xcdatamodeld */,
+				CE0573C927845EA800CBB247 /* Service.swift */,
 			);
 			path = VT6002CEM_217109054;
 			sourceTree = "<group>";
@@ -497,11 +503,13 @@
 			files = (
 				CE90284E2782F447000EC8AE /* LoginViewController.swift in Sources */,
 				CEC97B67277E1FAF009C5D0E /* ViewController.swift in Sources */,
+				CE0573C827844C9D00CBB247 /* MainTabController.swift in Sources */,
 				CEC97B63277E1FAF009C5D0E /* AppDelegate.swift in Sources */,
 				CEC97B6D277E1FAF009C5D0E /* VT6002CEM_217109054.xcdatamodeld in Sources */,
 				CEC97B65277E1FAF009C5D0E /* SceneDelegate.swift in Sources */,
 				CE9028502782F460000EC8AE /* HomeViewController.swift in Sources */,
 				CE90285327830D54000EC8AE /* Utilities.swift in Sources */,
+				CE0573CA27845EA800CBB247 /* Service.swift in Sources */,
 				CE90284C2782F424000EC8AE /* SignUpViewController.swift in Sources */,
 				CE5F9A0B27833BA600BFA59C /* Constants.swift in Sources */,
 			);
