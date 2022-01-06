@@ -11,6 +11,7 @@
 		9D51F65265D69E6A6D48F20D /* Pods_VT6002CEM_217109054_VT6002CEM_217109054UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892CFA17B0CF074B6372FDE /* Pods_VT6002CEM_217109054_VT6002CEM_217109054UITests.framework */; };
 		CE0573C827844C9D00CBB247 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0573C727844C9D00CBB247 /* MainTabController.swift */; };
 		CE0573CA27845EA800CBB247 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0573C927845EA800CBB247 /* Service.swift */; };
+		CE3CE0D22787780E005811DB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CE0D12787780E005811DB /* WebViewController.swift */; };
 		CE5F99D427832F7300BFA59C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5F99D327832F7300BFA59C /* GoogleService-Info.plist */; };
 		CE5F99D7278330A900BFA59C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CE5F99D6278330A900BFA59C /* FirebaseAnalytics */; };
 		CE5F99D9278330A900BFA59C /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CE5F99D8278330A900BFA59C /* FirebaseAnalyticsSwift-Beta */; };
@@ -83,6 +84,7 @@
 		C8C9536948F2AFF656CB38A0 /* Pods-VT6002CEM_217109054Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VT6002CEM_217109054Tests.release.xcconfig"; path = "Target Support Files/Pods-VT6002CEM_217109054Tests/Pods-VT6002CEM_217109054Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CE0573C727844C9D00CBB247 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		CE0573C927845EA800CBB247 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CE3CE0D12787780E005811DB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CE5F99D327832F7300BFA59C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE5F9A0A27833BA600BFA59C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE5F9A0D278358A000BFA59C /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				CE90284D2782F447000EC8AE /* LoginViewController.swift */,
 				CE90284F2782F460000EC8AE /* HomeViewController.swift */,
 				CE0573C727844C9D00CBB247 /* MainTabController.swift */,
+				CE3CE0D12787780E005811DB /* WebViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				CE90285327830D54000EC8AE /* Utilities.swift in Sources */,
 				CE0573CA27845EA800CBB247 /* Service.swift in Sources */,
 				CE90284C2782F424000EC8AE /* SignUpViewController.swift in Sources */,
+				CE3CE0D22787780E005811DB /* WebViewController.swift in Sources */,
 				CE5F9A0B27833BA600BFA59C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

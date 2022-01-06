@@ -27,12 +27,14 @@ class ViewController: UIViewController {
             // Do any additional setup after loading the view.
             
             setUpElements()
+        setUpVideo()
         }
         
     override func viewWillAppear(_ animated: Bool) {
             
             // Set up video in the background
-            setUpVideo()
+          //  setUpVideo()
+        self.videoPlayer?.play()
         }
     override func viewWillDisappear(_ animated: Bool) {
         
