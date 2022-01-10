@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Huv-Go-hOb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qUj-MC-BrW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -120,7 +120,7 @@
                                 <rect key="frame" x="20" y="518" width="374" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95713573169999999" green="0.87751639579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">The shadow manufacturing industry is a long-established industry in Hong Kong. It is reported that as early as the 1860s, a shadow manufacturing factory was operating on Bonham East Street, Sheung Wan. In the past, umbrellas were mostly made by hand, and stores would also provide umbrella repair services. Umbrellas were expensive at that time, and damaged umbrellas would be sent for repairs instead of discarded directly. The industry of man-made umbrellas and repairing umbrellas in Hong Kong has had a glorious time, and there are also many well-known local brands. At that time, the style of umbrellas was mainly black-cloth steel-frame long umbrellas. Later, folding umbrellas became popular. As the Hong Kong umbrella industry declined in the 1970s, materials and accessories for repairing umbrellas are difficult to purchase locally, and sometimes it is necessary to remove old umbrellas to obtain the required accessories.</mutableString>
+                                <string key="text">The shadow manufacturing industry is a long-established industry in Hong Kong. It is reported that as early as the 1860s, a shadow manufacturing factory was operating on Bonham East Street, Sheung Wan. In the past, umbrellas were mostly made by hand, and stores would also provide umbrella repair services. Umbrellas were expensive at that time, and damaged umbrellas would be sent for repairs instead of discarded directly. The industry of man-made umbrellas and repairing umbrellas in Hong Kong has had a glorious time, and there are also many well-known local brands. At that time, the style of umbrellas was mainly black-cloth steel-frame long umbrellas. Later, folding umbrellas became popular. As the Hong Kong umbrella industry declined in the 1970s, materials and accessories for repairing umbrellas are difficult to purchase locally, and sometimes it is necessary to remove old umbrellas to obtain the required accessories.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -178,34 +178,49 @@
             </objects>
             <point key="canvasLocation" x="2053.6231884057975" y="934.82142857142856"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="l83-0e-N2f">
             <objects>
-                <viewController id="f1U-TR-gD9" sceneMemberID="viewController">
+                <viewController id="f1U-TR-gD9" customClass="MapKitController" customModule="VT6002CEM_217109054" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jGT-sC-VQ9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aK-It-Lv3">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aK-It-Lv3">
                                 <rect key="frame" x="0.0" y="37" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.95882517099999998" green="0.88438457250000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <barButtonItem title="Logout" id="n9Y-uQ-3Tc">
                                         <color key="tintColor" systemColor="linkColor"/>
+                                        <connections>
+                                            <action selector="logoutButton_Tapped:" destination="f1U-TR-gD9" id="i8d-HI-cnd"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                                 <color key="barTintColor" red="0.95713573169999999" green="0.87751639579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="x0B-8l-hKz">
+                                <rect key="frame" x="0.0" y="81" width="414" height="732"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cZm-Qw-e5h"/>
                         <color key="backgroundColor" red="0.95713573169999999" green="0.87751639579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1aK-It-Lv3" firstAttribute="top" secondItem="jGT-sC-VQ9" secondAttribute="topMargin" constant="-7" id="5Jw-wn-qmW"/>
+                            <constraint firstItem="x0B-8l-hKz" firstAttribute="leading" secondItem="cZm-Qw-e5h" secondAttribute="leading" id="TJL-sg-EjU"/>
+                            <constraint firstItem="cZm-Qw-e5h" firstAttribute="bottom" secondItem="x0B-8l-hKz" secondAttribute="bottom" id="cES-ii-ySw"/>
+                            <constraint firstItem="cZm-Qw-e5h" firstAttribute="trailing" secondItem="x0B-8l-hKz" secondAttribute="trailing" id="gTa-MV-hxj"/>
+                            <constraint firstItem="x0B-8l-hKz" firstAttribute="top" secondItem="1aK-It-Lv3" secondAttribute="bottom" id="t7P-6y-ZYU"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="hKJ-Lx-wTr"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="mappin" catalog="system" id="hKJ-Lx-wTr"/>
+                    <connections>
+                        <outlet property="mapView" destination="x0B-8l-hKz" id="VeF-LE-OLg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGM-dJ-sbD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2970" y="935"/>
+            <point key="canvasLocation" x="2969.5652173913045" y="934.82142857142856"/>
         </scene>
         <!--Item-->
         <scene sceneID="dRm-Xa-hma">
@@ -475,7 +490,6 @@
             <objects>
                 <tabBarController storyboardIdentifier="MainTabController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qUj-MC-BrW" customClass="MainTabController" customModule="VT6002CEM_217109054" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sgd-cq-VPP">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="83"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -500,6 +514,7 @@
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="mappin" catalog="system" width="105" height="128"/>
         <image name="um1" width="1200" height="800"/>
         <image name="um5" width="768" height="1024"/>
         <systemColor name="labelColor">
