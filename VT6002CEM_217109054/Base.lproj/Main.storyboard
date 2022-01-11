@@ -154,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGa-0U-Zgs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3166.666666666667" y="276.5625"/>
+            <point key="canvasLocation" x="3645" y="266"/>
         </scene>
         <!--History-->
         <scene sceneID="wkq-9U-5t4">
@@ -311,6 +311,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa1-uL-r8r">
+                                <rect key="frame" x="130" y="728" width="155" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Book the Activity"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Rj-ic-Esi"/>
                         <color key="backgroundColor" red="0.95713573169999999" green="0.87751639579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
