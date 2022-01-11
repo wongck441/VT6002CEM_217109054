@@ -25,6 +25,7 @@ class UserInfoViewController: UIViewController{
         //get userID
         UserName.text = Auth.auth().currentUser?.email
     }
+    //choose image button
     @IBAction func didTapButton() {
         let vc = UIImagePickerController()
         vc.sourceType = .photoLibrary

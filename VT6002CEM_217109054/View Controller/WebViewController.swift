@@ -14,7 +14,7 @@ import Firebase
         override func viewDidLoad() {
             super.viewDidLoad()
             view.addSubview(webView)
-
+//url 
             guard let url = URL(string: "https://www.hkichdb.gov.hk/en/item.html?98820e30-e1e4-47c3-a809-7beea47d6ee7")
             else {
                 return
@@ -27,7 +27,7 @@ import Firebase
             super.viewDidLayoutSubviews()
             webView.frame = view.bounds
         }
-    
+    //logout button
     @IBAction func logoutButton_Tapped(_ sender: Any) {
         let auth = Auth.auth()
 
