@@ -17,6 +17,9 @@
 		CE1C6300278CA6B90020820E /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C62FC278CA6B90020820E /* NoteCell.swift */; };
 		CE1C6301278CA6B90020820E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C62FD278CA6B90020820E /* Note.swift */; };
 		CE1C6302278CA6B90020820E /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C62FE278CA6B90020820E /* NoteDetailVC.swift */; };
+		CE2185D5278D6A93005189A0 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2185D4278D6A93005189A0 /* UserInfoViewController.swift */; };
+		CE2185D7278D8CF7005189A0 /* FaceIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2185D6278D8CF7005189A0 /* FaceIDViewController.swift */; };
+		CE2185DB278D9234005189A0 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2185DA278D9234005189A0 /* NavigationController.swift */; };
 		CE3CE0D22787780E005811DB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3CE0D12787780E005811DB /* WebViewController.swift */; };
 		CE44CDC0278B6AAB00BB464D /* MapKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE44CDBF278B6AAB00BB464D /* MapKitController.swift */; };
 		CE5F99D427832F7300BFA59C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5F99D327832F7300BFA59C /* GoogleService-Info.plist */; };
@@ -97,6 +100,9 @@
 		CE1C62FC278CA6B90020820E /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		CE1C62FD278CA6B90020820E /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		CE1C62FE278CA6B90020820E /* NoteDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		CE2185D4278D6A93005189A0 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		CE2185D6278D8CF7005189A0 /* FaceIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDViewController.swift; sourceTree = "<group>"; };
+		CE2185DA278D9234005189A0 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		CE3CE0D12787780E005811DB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CE44CDBF278B6AAB00BB464D /* MapKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitController.swift; sourceTree = "<group>"; };
 		CE5F99D327832F7300BFA59C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -226,6 +232,9 @@
 				CE44CDBF278B6AAB00BB464D /* MapKitController.swift */,
 				CE1C62F7278C84270020820E /* TableViewController.swift */,
 				CE1C62F9278C846A0020820E /* ActivityController.swift */,
+				CE2185D4278D6A93005189A0 /* UserInfoViewController.swift */,
+				CE2185D6278D8CF7005189A0 /* FaceIDViewController.swift */,
+				CE2185DA278D9234005189A0 /* NavigationController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -536,13 +545,16 @@
 				CEC97B6D277E1FAF009C5D0E /* VT6002CEM_217109054.xcdatamodeld in Sources */,
 				CE1C62FF278CA6B90020820E /* NoteTableView.swift in Sources */,
 				CEC97B65277E1FAF009C5D0E /* SceneDelegate.swift in Sources */,
+				CE2185DB278D9234005189A0 /* NavigationController.swift in Sources */,
 				CE9028502782F460000EC8AE /* HomeViewController.swift in Sources */,
 				CE1C6302278CA6B90020820E /* NoteDetailVC.swift in Sources */,
 				CE90285327830D54000EC8AE /* Utilities.swift in Sources */,
 				CE0573CA27845EA800CBB247 /* Service.swift in Sources */,
 				CE90284C2782F424000EC8AE /* SignUpViewController.swift in Sources */,
 				CE3CE0D22787780E005811DB /* WebViewController.swift in Sources */,
+				CE2185D5278D6A93005189A0 /* UserInfoViewController.swift in Sources */,
 				CE1C62FA278C846A0020820E /* ActivityController.swift in Sources */,
+				CE2185D7278D8CF7005189A0 /* FaceIDViewController.swift in Sources */,
 				CE5F9A0B27833BA600BFA59C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
