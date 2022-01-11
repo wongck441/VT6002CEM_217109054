@@ -2,7 +2,7 @@ import UIKit
 import CoreData
 
 class NoteDetailVC: UIViewController
-{
+{ //add the title and description
 	@IBOutlet weak var titleTF: UITextField!
 	@IBOutlet weak var descTV: UITextView!
 	
@@ -18,7 +18,7 @@ class NoteDetailVC: UIViewController
 		}
 	}
 
-
+//save the action
 	@IBAction func saveAction(_ sender: Any)
 	{
 		let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -64,7 +64,7 @@ class NoteDetailVC: UIViewController
 			}
 		}
 	}
-	
+	//delete the note
 	@IBAction func DeleteNote(_ sender: Any)
 	{
 		let appDelegate = UIApplication.shared.delegate as! AppDelegate
