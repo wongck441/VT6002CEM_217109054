@@ -16,25 +16,19 @@ class TableViewController: UIViewController {
     
     @IBOutlet weak var DescriptionTextView: UITextView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         ActivityLabel.text = ALabel[myIndex]
         ActivityImageView.image = UIImage(named: AImageView[myIndex])
         DescriptionTextView.text = DTextView[myIndex]
-        
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func urlbtn(_ sender: Any) {
+            UIApplication.shared.open(URL(string:url[myIndex])! as URL, options: [:], completionHandler:nil)
+        }
+            }
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
