@@ -65,11 +65,11 @@ class MapKitController: UIViewController,CLLocationManagerDelegate{
     func render(_ location:CLLocation){
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         
-        let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         
         let region = MKCoordinateRegion(center: coordinate, span: span)
         
-        mapView.setRegion(region, animated: true)
+        mapView.setRegion(region, animated: false)
         
         let pin = MKPointAnnotation()//show the point
         pin.coordinate = coordinate
