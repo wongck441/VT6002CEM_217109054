@@ -170,21 +170,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="x0B-8l-hKz">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KsD-c7-8no">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cZm-Qw-e5h"/>
                         <color key="backgroundColor" red="0.95713573169999999" green="0.87751639579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="x0B-8l-hKz" firstAttribute="leading" secondItem="cZm-Qw-e5h" secondAttribute="leading" id="TJL-sg-EjU"/>
-                            <constraint firstItem="cZm-Qw-e5h" firstAttribute="bottom" secondItem="x0B-8l-hKz" secondAttribute="bottom" id="cES-ii-ySw"/>
-                            <constraint firstItem="cZm-Qw-e5h" firstAttribute="trailing" secondItem="x0B-8l-hKz" secondAttribute="trailing" id="gTa-MV-hxj"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="mappin" catalog="system" id="hKJ-Lx-wTr"/>
                     <connections>
-                        <outlet property="mapView" destination="x0B-8l-hKz" id="Qws-c7-VDu"/>
+                        <outlet property="mapView" destination="KsD-c7-8no" id="Wqe-sm-miC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGM-dJ-sbD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
