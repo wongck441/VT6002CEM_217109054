@@ -184,7 +184,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="mappin" catalog="system" id="hKJ-Lx-wTr"/>
                     <connections>
-                        <outlet property="mapView" destination="x0B-8l-hKz" id="VeF-LE-OLg"/>
+                        <outlet property="mapView" destination="x0B-8l-hKz" id="Qws-c7-VDu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGM-dJ-sbD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -344,11 +344,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa1-uL-r8r">
-                                <rect key="frame" x="130" y="728" width="155" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWP-5V-SAO">
+                                <rect key="frame" x="161" y="715" width="92" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Book the Activity"/>
+                                <buttonConfiguration key="configuration" style="plain" title="More">
+                                    <color key="baseForegroundColor" systemColor="linkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="urlbtn:" destination="gY7-AE-xJI" eventType="touchUpInside" id="USF-jo-di8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Rj-ic-Esi"/>
@@ -431,7 +436,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="beU-90-Tid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4386.9565217391309" y="-388.39285714285711"/>
+            <point key="canvasLocation" x="4355" y="123"/>
         </scene>
         <!--Note Details-->
         <scene sceneID="g5c-WC-aSm">
@@ -514,7 +519,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytl-0j-d51" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5282.608695652174" y="-374.33035714285711"/>
+            <point key="canvasLocation" x="5216" y="123"/>
         </scene>
         <!--Notes-->
         <scene sceneID="FW7-Tt-FWr">
@@ -572,7 +577,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rrg-Kz-qra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3497" y="-388"/>
+            <point key="canvasLocation" x="3530" y="123"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="x9m-DM-7OR">
