@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qUj-MC-BrW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Huv-Go-hOb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -67,16 +67,6 @@
                                 <rect key="frame" x="40" y="229" width="334" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkX-aD-Qg0">
-                                <rect key="frame" x="156" y="700" width="103.5" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="FaceIDLogin"/>
-                                <connections>
-                                    <action selector="LoginTapped:" destination="zgP-xA-UzQ" eventType="touchUpInside" id="bI4-sR-pTp"/>
-                                    <action selector="authenticateUser:" destination="zgP-xA-UzQ" eventType="touchUpInside" id="326-Zl-DXA"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d0W-Ze-qmE"/>
                         <color key="backgroundColor" red="0.95882517099999998" green="0.88438457250000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -204,7 +194,7 @@
         <!--User info-->
         <scene sceneID="1gx-I9-3lS">
             <objects>
-                <viewController id="NbO-oP-VKG" sceneMemberID="viewController">
+                <viewController id="NbO-oP-VKG" customClass="UserInfoViewController" customModule="VT6002CEM_217109054" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IBL-KZ-gSY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,11 +204,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Q0-as-42p">
-                                <rect key="frame" x="155" y="508" width="105" height="31"/>
+                                <rect key="frame" x="99" y="520" width="218" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Pick a Photo"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Pick a Photo"/>
+                                <connections>
+                                    <action selector="didTapButton" destination="NbO-oP-VKG" eventType="touchUpInside" id="dOC-6R-fKs"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qx0-Yh-xlD">
                                 <rect key="frame" x="80" y="118" width="101" height="21"/>
@@ -227,12 +220,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYk-3N-JR5">
-                                <rect key="frame" x="173" y="592" width="70" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gr-lQ-ETM">
                                 <rect key="frame" x="189" y="118" width="165" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -240,11 +227,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYk-3N-JR5">
+                                <rect key="frame" x="106" y="594" width="203" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButton_Tapped:" destination="NbO-oP-VKG" eventType="touchUpInside" id="VFH-w0-FrU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GFC-iY-m52"/>
                         <color key="backgroundColor" red="0.95713573169999999" green="0.87751639579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="User info" image="person.fill" catalog="system" id="PyW-Ob-dYd"/>
+                    <connections>
+                        <outlet property="ImageView" destination="R4M-Cr-OKw" id="nWD-99-Gyi"/>
+                        <outlet property="UserName" destination="7gr-lQ-ETM" id="VGm-PL-NzT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbg-Vv-1at" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -517,9 +517,50 @@
             <point key="canvasLocation" x="5282.608695652174" y="-374.33035714285711"/>
         </scene>
         <!--Notes-->
+        <scene sceneID="FW7-Tt-FWr">
+            <objects>
+                <viewController id="v5c-En-6XP" customClass="FaceIDViewController" customModule="VT6002CEM_217109054" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CAv-xY-qfa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdU-4E-4Kd">
+                                <rect key="frame" x="120" y="349" width="174" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="FaceID"/>
+                                <connections>
+                                    <action selector="authenticateUser:" destination="v5c-En-6XP" eventType="touchUpInside" id="lcE-QI-hDj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please click the FaceID button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-iw-JB9">
+                                <rect key="frame" x="33" y="252" width="349" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notes need FaceID to unlock it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUO-wD-aHC">
+                                <rect key="frame" x="33" y="104" width="374" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="U4d-7P-R92"/>
+                        <color key="backgroundColor" red="0.95713573169999999" green="0.87751639579999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notes" image="note.text" catalog="system" id="SFh-M5-WgT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tV1-Zb-VPo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2724.6376811594205" y="122.54464285714285"/>
+        </scene>
+        <!--Notes-->
         <scene sceneID="7A0-qv-B38">
             <objects>
-                <navigationController id="1Yy-pD-t6m" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" id="1Yy-pD-t6m" customClass="NavigationController" customModule="VT6002CEM_217109054" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Notes" image="paperplane.fill" catalog="system" id="7pW-oh-Mdw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YV6-Rz-YUk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -753,8 +794,8 @@
                         <segue destination="gbX-vP-Egm" kind="relationship" relationship="viewControllers" id="Tkd-p3-kSX"/>
                         <segue destination="f1U-TR-gD9" kind="relationship" relationship="viewControllers" id="IXJ-XE-aan"/>
                         <segue destination="wNw-ZN-lCm" kind="relationship" relationship="viewControllers" id="hf1-MY-OPP"/>
-                        <segue destination="1Yy-pD-t6m" kind="relationship" relationship="viewControllers" id="cNW-VJ-ssx"/>
                         <segue destination="NbO-oP-VKG" kind="relationship" relationship="viewControllers" id="M57-UZ-nBg"/>
+                        <segue destination="v5c-En-6XP" kind="relationship" relationship="viewControllers" id="9WR-hL-CcE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWt-SM-OpZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -764,13 +805,14 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="dd9-NN-frS"/>
-        <segue reference="NvJ-XB-T5n"/>
+        <segue reference="qGO-fw-xV9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1" width="1440" height="1440"/>
         <image name="book" catalog="system" width="128" height="99"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="mappin" catalog="system" width="105" height="128"/>
+        <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="ticket" catalog="system" width="128" height="84"/>
