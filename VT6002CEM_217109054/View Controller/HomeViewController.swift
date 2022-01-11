@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    //logout button
     @IBAction func logoutButton_Tapped(_ sender: Any) {
         let auth = Auth.auth()
 
