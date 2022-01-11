@@ -1,5 +1,6 @@
 import UIKit
 import CoreData
+import LocalAuthentication
 
 var noteList = [Note]()
 
@@ -89,5 +90,5 @@ class NoteTableView: UITableViewController
 		}
 	}
 	
-	
-}
+    
+        }
