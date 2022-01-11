@@ -8,6 +8,8 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>This app uses Face ID to confirm your identity</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>allow access the photo</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
