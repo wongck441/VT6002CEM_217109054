@@ -65,6 +65,7 @@
 		CEC97B7D277E1FB0009C5D0E /* VT6002CEM_217109054Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC97B7C277E1FB0009C5D0E /* VT6002CEM_217109054Tests.swift */; };
 		CEC97B87277E1FB0009C5D0E /* VT6002CEM_217109054UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC97B86277E1FB0009C5D0E /* VT6002CEM_217109054UITests.swift */; };
 		CEC97B89277E1FB0009C5D0E /* VT6002CEM_217109054UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC97B88277E1FB0009C5D0E /* VT6002CEM_217109054UITestsLaunchTests.swift */; };
+		CEFFC00827900EB20086D278 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFFC00727900EB20086D278 /* LoginTest.swift */; };
 		FB666EC58FD361F60ACC5B38 /* Pods_VT6002CEM_217109054Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E71BFC38B9DA737CBC53F1 /* Pods_VT6002CEM_217109054Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,13 @@
 			remoteInfo = VT6002CEM_217109054;
 		};
 		CEC97B83277E1FB0009C5D0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC97B57277E1FAF009C5D0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC97B5E277E1FAF009C5D0E;
+			remoteInfo = VT6002CEM_217109054;
+		};
+		CEFFC00927900EB20086D278 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEC97B57277E1FAF009C5D0E /* Project object */;
 			proxyType = 1;
@@ -126,6 +134,8 @@
 		CEC97B82277E1FB0009C5D0E /* VT6002CEM_217109054UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VT6002CEM_217109054UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC97B86277E1FB0009C5D0E /* VT6002CEM_217109054UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VT6002CEM_217109054UITests.swift; sourceTree = "<group>"; };
 		CEC97B88277E1FB0009C5D0E /* VT6002CEM_217109054UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VT6002CEM_217109054UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEFFC00527900EB20086D278 /* LoginTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFFC00727900EB20086D278 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
 		DACEA90A23D067F69C4DD643 /* Pods-VT6002CEM_217109054.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VT6002CEM_217109054.release.xcconfig"; path = "Target Support Files/Pods-VT6002CEM_217109054/Pods-VT6002CEM_217109054.release.xcconfig"; sourceTree = "<group>"; };
 		E32A1F851F81CAD8A152EFE0 /* Pods-VT6002CEM_217109054-VT6002CEM_217109054UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VT6002CEM_217109054-VT6002CEM_217109054UITests.debug.xcconfig"; path = "Target Support Files/Pods-VT6002CEM_217109054-VT6002CEM_217109054UITests/Pods-VT6002CEM_217109054-VT6002CEM_217109054UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E846C04DD5B643AB835BA55A /* Pods-VT6002CEM_217109054.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VT6002CEM_217109054.debug.xcconfig"; path = "Target Support Files/Pods-VT6002CEM_217109054/Pods-VT6002CEM_217109054.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D51F65265D69E6A6D48F20D /* Pods_VT6002CEM_217109054_VT6002CEM_217109054UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFFC00227900EB20086D278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +262,7 @@
 				CEC97B61277E1FAF009C5D0E /* VT6002CEM_217109054 */,
 				CEC97B7B277E1FB0009C5D0E /* VT6002CEM_217109054Tests */,
 				CEC97B85277E1FB0009C5D0E /* VT6002CEM_217109054UITests */,
+				CEFFC00627900EB20086D278 /* LoginTest */,
 				CEC97B60277E1FAF009C5D0E /* Products */,
 				37AD1C474ED5F8880A5366C4 /* Pods */,
 				A6920D73E2F4967CCB10C578 /* Frameworks */,
@@ -257,6 +275,7 @@
 				CEC97B5F277E1FAF009C5D0E /* VT6002CEM_217109054.app */,
 				CEC97B78277E1FB0009C5D0E /* VT6002CEM_217109054Tests.xctest */,
 				CEC97B82277E1FB0009C5D0E /* VT6002CEM_217109054UITests.xctest */,
+				CEFFC00527900EB20086D278 /* LoginTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,6 +315,14 @@
 				CEC97B88277E1FB0009C5D0E /* VT6002CEM_217109054UITestsLaunchTests.swift */,
 			);
 			path = VT6002CEM_217109054UITests;
+			sourceTree = "<group>";
+		};
+		CEFFC00627900EB20086D278 /* LoginTest */ = {
+			isa = PBXGroup;
+			children = (
+				CEFFC00727900EB20086D278 /* LoginTest.swift */,
+			);
+			path = LoginTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +412,24 @@
 			productReference = CEC97B82277E1FB0009C5D0E /* VT6002CEM_217109054UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CEFFC00427900EB20086D278 /* LoginTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFFC00D27900EB20086D278 /* Build configuration list for PBXNativeTarget "LoginTest" */;
+			buildPhases = (
+				CEFFC00127900EB20086D278 /* Sources */,
+				CEFFC00227900EB20086D278 /* Frameworks */,
+				CEFFC00327900EB20086D278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFFC00A27900EB20086D278 /* PBXTargetDependency */,
+			);
+			name = LoginTest;
+			productName = LoginTest;
+			productReference = CEFFC00527900EB20086D278 /* LoginTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -403,6 +448,10 @@
 						TestTargetID = CEC97B5E277E1FAF009C5D0E;
 					};
 					CEC97B81277E1FB0009C5D0E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CEC97B5E277E1FAF009C5D0E;
+					};
+					CEFFC00427900EB20086D278 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = CEC97B5E277E1FAF009C5D0E;
 					};
@@ -427,6 +476,7 @@
 				CEC97B5E277E1FAF009C5D0E /* VT6002CEM_217109054 */,
 				CEC97B77277E1FB0009C5D0E /* VT6002CEM_217109054Tests */,
 				CEC97B81277E1FB0009C5D0E /* VT6002CEM_217109054UITests */,
+				CEFFC00427900EB20086D278 /* LoginTest */,
 			);
 		};
 /* End PBXProject section */
@@ -452,6 +502,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CEC97B80277E1FB0009C5D0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFFC00327900EB20086D278 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -576,6 +633,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEFFC00127900EB20086D278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFFC00827900EB20086D278 /* LoginTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -588,6 +653,11 @@
 			isa = PBXTargetDependency;
 			target = CEC97B5E277E1FAF009C5D0E /* VT6002CEM_217109054 */;
 			targetProxy = CEC97B83277E1FB0009C5D0E /* PBXContainerItemProxy */;
+		};
+		CEFFC00A27900EB20086D278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC97B5E277E1FAF009C5D0E /* VT6002CEM_217109054 */;
+			targetProxy = CEFFC00927900EB20086D278 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -738,11 +808,15 @@
 				DEVELOPMENT_TEAM = ZQQUH5GA97;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VT6002CEM_217109054/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "This app uses Face ID to confirm your identity";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "google maps";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "allow access the photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -767,11 +841,15 @@
 				DEVELOPMENT_TEAM = ZQQUH5GA97;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VT6002CEM_217109054/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "This app uses Face ID to confirm your identity";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "google maps";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "allow access the photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -881,6 +959,50 @@
 			};
 			name = Release;
 		};
+		CEFFC00B27900EB20086D278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WongChunKit.LoginTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VT6002CEM_217109054.app/VT6002CEM_217109054";
+			};
+			name = Debug;
+		};
+		CEFFC00C27900EB20086D278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WongChunKit.LoginTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VT6002CEM_217109054.app/VT6002CEM_217109054";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -916,6 +1038,15 @@
 			buildConfigurations = (
 				CEC97B93277E1FB0009C5D0E /* Debug */,
 				CEC97B94277E1FB0009C5D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFFC00D27900EB20086D278 /* Build configuration list for PBXNativeTarget "LoginTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFFC00B27900EB20086D278 /* Debug */,
+				CEFFC00C27900EB20086D278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
